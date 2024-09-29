@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const connection = require('./crowdfunding_db'); // 假设你已经创建了这个模块来连接数据库
+const connection = require('./crowdfunding_db'); // 连接数据库
 const cors = require('cors');
 
 const app = express();

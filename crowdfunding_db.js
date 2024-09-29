@@ -12,7 +12,7 @@ connection.connect(err => {
     console.error('Error connecting: ' + err.stack);
     return;
   }
-  console.log('Connected!');
+  console.log('Connected crowdfunding_db successfully');
 });
 
 module.exports = connection;
