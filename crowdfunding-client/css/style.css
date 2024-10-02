@@ -1,38 +1,73 @@
+/* Set the default font for the page to Arial, with a fallback to sans-serif */
 body {
     font-family: Arial, sans-serif;
 }
 
+/* Style the header and footer */
 header, footer {
-    background-color: #f2f2f2;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 10px 0; /* Padding top and bottom */
+    text-align: center; /* Center align text */
 }
 
+/* Remove the default padding and list style for navigation list items */
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* No padding */
 }
 
+/* Display navigation list items in a horizontal line with a margin between items */
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Space between items */
 }
 
+/* Style the links in the navigation bar */
 nav ul li a {
-    text-decoration: none;
-    color: #333;
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark grey text color */
 }
 
-#fundraiser-list, #results-list {
-    margin-top: 20px;
+/* Style the container for the list of fundraisers */
+#fundraiser-list {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    gap: 20px; /* Space between items */
+    justify-content: space-around; /* Distribute items evenly */
+    margin-top: 20px; /* Space above the list */
 }
 
+/* Style individual fundraiser items */
 .fundraiser {
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 10px; /* Padding inside the box */
+    margin-bottom: 10px; /* Space below the box */
+    flex: 1; /* Allow items to grow and shrink */
+    min-width: 200px; /* Minimum width of the item */
+    max-width: 300px; /* Maximum width of the item */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }
 
+/* Style for buttons (e.g., for actions like "View Details") */
 button {
-    margin-top: 10px;
+    margin-top: 10px; /* Space above the button */
+}
+
+/* Style the container for the list of search results */
+#results-list {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    gap: 20px; /* Space between items */
+    margin-top: 20px; /* Space above the list */
+}
+
+/* Style individual search result items */
+.search-result {
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 10px; /* Padding inside the box */
+    margin-bottom: 10px; /* Space below the box */
+    flex: 1; /* Allow items to grow and shrink */
+    min-width: 200px; /* Minimum width of the item */
+    max-width: 300px; /* Maximum width of the item */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
 }

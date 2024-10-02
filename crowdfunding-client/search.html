@@ -4,46 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Fundraisers</title>
+    <!-- Links to the external CSS stylesheet for styling the page -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header section containing the page title and navigation menu -->
     <header>
         <h1>Search Fundraisers</h1>
         <nav>
             <ul>
+                <!-- List of navigation links -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="search.html">Search</a></li>
                 <li><a href="fundraiser.html">Fundraiser</a></li>
             </ul>
         </nav>
     </header>
+    <!-- Main content section -->
     <main>
+        <!-- Section containing the search form -->
         <section id="search-form">
             <h2>Search Criteria</h2>
             <form>
+                <!-- Input field for searching by organizer's name -->
                 <label for="organizer">Organizer:</label>
-                <input type="text" id="organizer" name="organizer">
+                <input type="text" id="organizer" name="organizer" placeholder="Enter organizer's name">
+                <!-- Input field for searching by city -->
                 <label for="city">City:</label>
-                <input type="text" id="city" name="city">
+                <input type="text" id="city" name="city" placeholder="Enter city">
+                <!-- Dropdown for selecting a category -->
                 <label for="category">Category:</label>
                 <select id="category" name="category">
-                    <option value="">        </option> <!-- 默认选中的提示 -->
+                    <option value="">Select Category</option> 
                     <option value="medical">Medical</option>
                     <option value="education">Education</option>
                     <option value="disaster-relief">Disaster-Relief</option>
                 </select>
+                <!-- Button to submit the search form -->
                 <button type="button" onclick="searchFundraisers()">Search</button>
+                <!-- Button to clear the search form -->
                 <button type="button" onclick="clearCheckboxes()">Clear</button>
             </form>
         </section>
+        <!-- Section to display the results of the search -->
         <section id="search-results">
             <h2>Search Results</h2>
+            <!-- Div where the search results will be dynamically inserted -->
             <div id="results-list"></div>
         </section>
     </main>
     <footer>
         <p>Contact us: <a href="mailto:z.tian.10@student.scu.edu.au">z.tian.10@student.scu.edu.au</a></p>
     </footer>
+    <!-- Script tag linking to the main JavaScript file for search functionality -->
     <script src="js/search.js"></script>
 </body>
 </html>
